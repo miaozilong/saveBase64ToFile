@@ -33,7 +33,9 @@ func main() {
 	}
 	wg.Wait()
 	elapsed := time.Since(startTime)
-	fmt.Println(elapsed)
+	fmt.Println("耗时", elapsed)
+	fmt.Println("按回车键退出")
+	fmt.Scanln()
 }
 
 func writePic(PICPATH string, filename string, dist []byte) {
